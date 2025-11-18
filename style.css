@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      padding: 40px;
+      gap: 20px;
+    }
+
+    .info-box {
+      background: rgb(245, 245, 245);
+      border-radius: 5px;
+      width: 220px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .info-box i {
+      font-size: 30px;
+      color: #d5d832;
+      margin-bottom: 10px;
+    }
+
+    .info-box h4 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .info-box-icon{
+      margin: 10px 0 5px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    
+    .info-box p {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    .contact-form {
+      background-color: #d5d832;
+      flex: 1;
+      min-width: 300px;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 3px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .contact-form textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .contact-form button {
+      background-color: transparent;
+      border: 2px solid #000;
+      color: #000;
+      padding: 10px 25px;
+      cursor: pointer;
+      border-radius: 3px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+ .timeline {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .step {
+      background-color: #d5d832;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      color: #000000;
+      border-radius: 30px 30px 30px 30px;
+      overflow: hidden;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .number {
+      width: 60px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px 0;
+    }
+
+    .content {
+      flex: 1;
+      background-color: #d5d832;    
+      display: flex;
+      align-items: center;
+      padding: 15px 25px;
+      gap: 15px;
+    }
+
+    .emoji {
+      font-size: 26px;
+    }
+
+    .text h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #000000;
+    }
+
+    .text p {
+      margin: 0;
+      font-size: 14px;
+      opacity: 0.9;
+      color: #000000;
+    }
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    padding-top: 100px;
+}
+
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: rgba(59, 59, 59, 0.6);
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+}
+
+.logo{
+    font-size: 3rem;
+    color: #d5d832;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    display: fixed;
+    margin-left: 7rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #d5d832;
+    border-bottom: 3px solid #d5d832;
+}
+
+.selected {
+    color: #d5d832;
+    border-bottom: 3px solid #d5d832;
+}
+
+.project-container{
+  display: block;
+  margin: 20px;
+  width: auto;
+  height: auto;
+  gap: 20%;
+  padding: 25px;
+  background-color: rgba(94, 94, 94, 0.589);
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 0 25px rgb(85, 84, 45);
+}
+
+.img-projects{
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px black;
+}
+
+.img-certs{
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px black;
+}
+
+.img-certs:hover{
+  transform: scale(1.1);
+  transition: ease 0.5s;
+}
+
+.img-projects:hover{
+  transform: scale(1.1);
+  transition: ease 0.5s;
+}
+
+.title{
+  text-align: center;
+  padding: 20px;
+  color: #d5d832;
+}
+
+.description{
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+audio{
+  margin: 10px;
+  width: 100%;
+}
+
+.song-container{
+  display: block;
+  align-content: center;
+  padding: 2%;
+  height: auto;
+  width: auto;
+  background-color: rgba(39, 39, 39, 0.692);
+
+}
+
+.song-container img{
+  float: left;
+  height: auto;
+  width: 10%;
+}
+
+.song-container h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span{
+    color: #d5d832;
+}
+
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 30%;
+    box-shadow: 0 0 25px solid #d5d832;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #d5d832;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #d5d832;
+}
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #d5d832;
+    box-shadow: 0  0 25px #d5d832;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #d5d832;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #d5d832;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #d5d832;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 25px #d5d832;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "Future Computer Engineer";
+    color: #d5d832;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+button{
+  padding: 20px;
+  color: white;
+  border-radius: 50px;
+  border-color: #d5d832;
+  background-color: transparent;
+  border-style: solid;
+  font-size: 20px;
+  transition: 0.3s ease;
+  color: #d5d832;
+}
+
+button:hover{
+  color: black;
+  transform: scale(1.1) translateY(-5px);
+  background-color: #d5d832;
+  box-shadow: 0  0 25px #d5d832;
+}
+
+.songback{
+  color:#d5d832;
+  font-size: 30px;
+}
+
+.songback:hover{
+  transform: scale(1.3);
+  transition: ease 0.5s;
+}
+
+.follow{
+  font-size: 30px;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #d5d832;
+    }
+}
+
+@keyframes words{
+    0%, 50%{
+        content: "Student";
+    }
+    51%, 100%{
+        content: "Future Computer Engineer";
+    }
+}
+
+@media(max-width:500px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+        gap: 4rem;  
+    }
+
+    .song-container h1{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .song-container img{
+      margin-left: 20px;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .info-box {
+        width: 80%;
+      }
+      .contact-form {
+        width: 90%;
+      }
+}
+
+
+@media(max-width:300px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #d5d832;
+        border-bottom: 3px solid #d5d832;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #d5d832;
+    }
+}
