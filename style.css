@@ -117,7 +117,7 @@ html{
       color: #000000;
       border-radius: 30px 30px 30px 30px;
       overflow: hidden;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+     box-shadow: 0 0 15px rgba(87, 87, 87, 0.959);
     }
 
     .number {
@@ -529,4 +529,5 @@ button:hover{
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid #d5d832;
     }
+
 }
